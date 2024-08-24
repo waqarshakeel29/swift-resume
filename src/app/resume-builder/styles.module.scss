@@ -1,0 +1,20 @@
+
+.container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    margin: 24px 48px;
+}
+
+.resume-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (min-width: 768px) { /* This corresponds to the `md` breakpoint in Tailwind */
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.item {
+    grid-column: span 3;
+}

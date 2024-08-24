@@ -1,0 +1,18 @@
+
+@import '@/styles/utils/_variables.scss';
+@import '@/styles/utils/_colors.scss';
+
+
+.label {
+    color: $eerie-black;
+
+    &--medium {
+        font-size: 16px;
+        font-style: $main-font-regular;
+    }
+
+    &--small {
+        font-size: 16px;
+        font-style: $main-font-regular;
+    }
+}

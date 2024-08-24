@@ -7,6 +7,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { usePDF } from "@react-pdf/renderer";
 import dynamic from "next/dynamic";
+import styles from "./ResumeControlBar.module.scss";
 
 const ResumeControlBar = ({
   scale,
@@ -34,9 +35,9 @@ const ResumeControlBar = ({
   }, [update, document]);
 
   return (
-    <div className="sticky bottom-0 left-0 right-0 flex h-[var(--resume-control-bar-height)] items-center justify-center px-[var(--resume-padding)] text-gray-600 lg:justify-between">
-      <div className="flex items-center gap-2">
-        <MagnifyingGlassIcon className="h-5 w-5" aria-hidden="true" />
+    <div className={styles.container}>
+      <div className={styles.element}>
+        <MagnifyingGlassIcon className={styles.icon} aria-hidden="true" />
         <input
           type="range"
           min={0.5}
@@ -48,24 +49,34 @@ const ResumeControlBar = ({
             setScale(Number(e.target.value));
           }}
         />
-        <div className="w-10">{`${Math.round(scale * 100)}%`}</div>
-        <label className="hidden items-center gap-1 lg:flex">
+        <div
+          style={{
+            width: "2.5rem" /* 10 * 0.25rem (base unit) = 2.5rem */,
+          }}
+        >{`${Math.round(scale * 100)}%`}</div>
+        <label className={styles.checkbox}>
           <input
             type="checkbox"
-            className="mt-0.5 h-4 w-4"
+            className={styles["checkbox__input"]}
             checked={scaleOnResize}
             onChange={() => setScaleOnResize((prev) => !prev)}
           />
-          <span className="select-none">Autoscale</span>
+          <span
+            style={{
+              userSelect: "none",
+            }}
+          >
+            Autoscale
+          </span>
         </label>
       </div>
       <a
-        className="ml-1 flex items-center gap-1 rounded-md border border-gray-300 px-3 py-0.5 hover:bg-gray-100 lg:ml-8"
+        className={styles['download-resume']}
         href={instance.url!}
         download={fileName}
       >
-        <ArrowDownTrayIcon className="h-4 w-4" />
-        <span className="whitespace-nowrap">Download Resume</span>
+        <ArrowDownTrayIcon className={styles.icon} />
+        <span className={styles['download-resume__text']}>Download Resume</span>
       </a>
     </div>
   );

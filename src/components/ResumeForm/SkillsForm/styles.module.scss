@@ -1,0 +1,57 @@
+.container {
+    grid-column: span 6 / span 6;
+    /* col-span-full */
+    display: grid;
+    /* grid */
+    gap: 0.75rem;
+}
+
+.bullet-point-container {
+    position: relative;
+    /* relative */
+    grid-column: span 6 / span 6;
+    /* col-span-full */
+}
+
+.bullet-visibility-button {
+    position: absolute;
+    /* absolute */
+    left: 4.5rem;
+    /* left-[4.5rem] */
+    top: 0.07rem;
+    /* top-[0.07rem] */
+}
+
+.dotted-divider {
+    grid-column: span 6 / span 6;
+    /* col-span-full */
+    margin-bottom: 1rem;
+    /* mb-4 */
+    margin-top: 1.5rem;
+    /* mt-6 */
+    border-top-width: 2px;
+    /* border-t-2 */
+    border-top-style: dotted;
+    /* border-dotted */
+    border-top-color: #e5e7eb;
+    /* border-gray-200 */
+}
+
+.skill-info {
+    margin-top: 0.5rem;
+    /* mt-2 */
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 400;
+    /* font-normal */
+    color: #4b5563;
+    /* text-gray-600 */
+}
+
+.full-column-span {
+    grid-column: span 6 / span 6;
+}
+
+.half-column-span {
+    grid-column: span 3 / span 6;
+}

@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    /* flex */
+    flex-direction: column;
+    /* flex-col */
+    gap: 1.5rem;
+    /* gap-6 (1.5rem or 24px) */
+}
+
+.settings-container {
+    display: flex;
+    /* flex */
+    align-items: center;
+    /* items-center */
+    gap: 0.5rem;
+    /* gap-2 (0.5rem or 8px) */
+
+    &__icon {
+        height: 1.5rem;
+        /* h-6 (1.5rem or 24px) */
+        width: 1.5rem;
+        /* w-6 (1.5rem or 24px) */
+        color: #4b5563;
+        /* text-gray-600 (hex color) */
+    }
+
+    &__heading {
+        font-size: 1.125rem;
+        /* text-lg (1.125rem or 18px) */
+        font-weight: 600;
+        /* font-semibold */
+        letter-spacing: 0.015em;
+        /* tracking-wide (0.015em) */
+        color: #111827;
+        /* text-gray-900 (hex color) */
+    }
+}
+
+
+.theme-container {
+    margin-top: 0.5rem;
+    /* mt-2 (0.5rem or 8px) */
+    display: flex;
+    /* flex */
+    flex-wrap: wrap;
+    /* flex-wrap */
+    gap: 0.5rem;
+    /* gap-2 (0.5rem or 8px) */
+
+    &__item {
+        display: flex;
+        /* flex */
+        height: 2.5rem;
+        /* h-10 (2.5rem or 40px) */
+        width: 2.5rem;
+        /* w-10 (2.5rem or 40px) */
+        cursor: pointer;
+        /* cursor-pointer */
+        align-items: center;
+        /* items-center */
+        justify-content: center;
+        /* justify-center */
+        border-radius: 0.375rem;
+        /* rounded-md (0.375rem or 6px) */
+        font-size: 0.875rem;
+        /* text-sm (0.875rem or 14px) */
+        color: #ffffff;
+        /* text-white (hex color) */
+    }
+}
+
+.selection-container {
+    display: flex;
+    /* flex */
+    width: 105px;
+    /* w-[105px] */
+    cursor: pointer;
+    /* cursor-pointer */
+    align-items: center;
+    /* items-center */
+    justify-content: center;
+    /* justify-center */
+    border-radius: 0.375rem;
+    /* rounded-md (0.375rem or 6px) */
+    border: 1px solid #d1d5db;
+    /* border border-gray-300 (gray-300 hex color) */
+    padding-top: 0.375rem;
+    /* py-1.5 (0.375rem or 6px) */
+    padding-bottom: 0.375rem;
+    /* py-1.5 (0.375rem or 6px) */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    /* shadow-sm */
+
+    &:hover {
+        border-color: #d1d5db;
+        /* hover:border-gray-400 (gray-400 hex color) */
+        background-color: #f3f4f6;
+        /* hover:bg-gray-100 (gray-100 hex color) */
+    }
+
+}
+
+.selection-wrapper {
+    margin-top: 0.5rem;
+    /* mt-2 (0.5rem or 8px) */
+    display: flex;
+    /* flex */
+    flex-wrap: wrap;
+    /* flex-wrap */
+    gap: 0.75rem;
+    /* gap-3 (0.75rem or 12px) */
+}
+
+.doc-size-selection {
+    display: flex;
+    /* flex */
+    flex-direction: column;
+    /* flex-col */
+    align-items: center;
+    /* items-center */
+}
+
+
+.inline-input-container {
+    display: flex;
+    /* flex */
+    gap: 0.5rem;
+    /* gap-2 (0.5rem or 8px) */
+    font-size: 1rem;
+    /* text-base (1rem or 16px) */
+    font-weight: 500;
+    /* font-medium (500) */
+    color: #4a5568;
+    /* text-gray-700 (gray-700 hex color) */
+
+    &__label {
+        width: 7rem;
+    }
+
+    &__input {
+        width: 5rem;
+        /* w-[5rem] (5rem) */
+        border-bottom: 1px solid #d1d5db;
+        /* border-b border-gray-300 (gray-300 hex color) */
+        text-align: center;
+        /* text-center */
+        font-weight: 600;
+        /* font-semibold (600) */
+        line-height: 1.125rem;
+        /* leading-3 (1.125rem or 18px) */
+        outline: none;
+        /* outline-none */
+    }
+}

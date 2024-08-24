@@ -16,6 +16,7 @@ import {
   useRegisterReactPDFHyphenationCallback,
 } from "@/components/fonts/hooks";
 import { NonEnglishFontsCSSLazyLoader } from "@/components/fonts/NonEnglishFontsCSSLoader";
+import styles from './styles.module.scss';
 
 export const Resume = () => {
   const [scale, setScale] = useState(0.8);
@@ -32,10 +33,10 @@ export const Resume = () => {
   return (
     <>
       <NonEnglishFontsCSSLazyLoader />
-      <div className="relative flex justify-center md:justify-start">
-        <FlexboxSpacer maxWidth={50} className="hidden md:block" />
-        <div className="relative">
-          <section className="h-[calc(100vh-var(--top-nav-bar-height)-var(--resume-control-bar-height))] overflow-hidden md:p-[var(--resume-padding)]">
+      <div className={styles.container}>
+        <FlexboxSpacer maxWidth={50} className={styles.spacer} />
+        <div style={{ position: 'relative' }}>
+          <section className={styles.section}>
             <ResumeIframeCSR
               documentSize={settings.documentSize}
               scale={scale}

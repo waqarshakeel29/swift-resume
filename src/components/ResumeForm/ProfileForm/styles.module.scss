@@ -1,0 +1,12 @@
+.profile-form__container {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.full-column-span {
+    grid-column: span 12 / span 12;
+}
+
+.half-column-span {
+    grid-column: span 6 / span 12;
+}

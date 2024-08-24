@@ -1,0 +1,77 @@
+.container {
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: var(50px);
+    align-items: center;
+    justify-content: center;
+    padding-left: var(20px);
+    padding-right: var(20px);
+    color: #4b5563;
+    /* equivalent to text-gray-600 in Tailwind */
+
+    @media (min-width: 1024px) {
+        /* This corresponds to the `lg` breakpoint in Tailwind */
+        justify-content: space-between;
+    }
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* 2 * 0.25rem (base unit) = 0.5rem */
+}
+
+.icon {
+    height: 1.25rem;
+    /* 5 * 0.25rem (base unit) = 1.25rem */
+    width: 1.25rem;
+}
+
+.checkbox {
+    display: none;
+    align-items: center;
+    gap: 0.25rem;
+    /* 1 * 0.25rem (base unit) = 0.25rem */
+
+    @media (min-width: 1024px) {
+        /* This corresponds to the `lg` breakpoint in Tailwind */
+        display: flex;
+    }
+
+    &__input {
+        margin-top: 0.125rem; /* 0.5 * 0.25rem (base unit) = 0.125rem */
+        height: 1rem; /* 4 * 0.25rem (base unit) = 1rem */
+        width: 1rem;
+    }
+}
+
+.download-resume {
+    margin-left: 0.25rem; /* 1 * 0.25rem (base unit) = 0.25rem */
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* 1 * 0.25rem (base unit) = 0.25rem */
+    border-radius: 0.375rem; /* Equivalent to rounded-md in Tailwind */
+    border: 1px solid #d1d5db; /* Equivalent to border-gray-300 in Tailwind */
+    padding-left: 0.75rem; /* 3 * 0.25rem (base unit) = 0.75rem */
+    padding-right: 0.75rem;
+    padding-top: 0.125rem; /* 0.5 * 0.25rem (base unit) = 0.125rem */
+    padding-bottom: 0.125rem;
+  
+    &:hover {
+      background-color: #f3f4f6; /* Equivalent to bg-gray-100 in Tailwind */
+    }
+  
+    @media (min-width: 1024px) { /* This corresponds to the `lg` breakpoint in Tailwind */
+      margin-left: 2rem; /* 8 * 0.25rem (base unit) = 2rem */
+    }
+
+    &__text {
+        white-space: nowrap;
+    }
+  }

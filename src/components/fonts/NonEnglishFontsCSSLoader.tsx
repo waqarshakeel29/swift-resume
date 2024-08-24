@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import { getAllFontFamiliesToLoad } from "components/fonts/lib";
+import { getAllFontFamiliesToLoad } from "@/components/fonts/lib";
 
-const FontsZhCSR = dynamic(() => import("components/fonts/FontsZh"), {
+const FontsZhCSR = dynamic(() => import("@/components/fonts/FontsZh"), {
   ssr: false,
 });
 

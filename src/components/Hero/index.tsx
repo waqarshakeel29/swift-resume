@@ -1,5 +1,6 @@
 import { AutoTypingResume } from "@/components/AutoTypingResume";
-import styles from "./hero.module.css";
+import Link from 'next/link'
+import styles from "./hero.module.scss";
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
           Create a standout resume in minutes with our intuitive builder. It's
           free, powerful, and designed to help you land your dream job.
         </span>
-        <button className={styles['create-button']}>Create Resume</button>
+        <Link href="/resume-builder"><button className={styles['create-button']}>Create Resume</button></Link>
       </div>
       <AutoTypingResume />
     </div>

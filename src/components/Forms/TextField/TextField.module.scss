@@ -1,0 +1,51 @@
+@import '@/styles/utils/_variables.scss';
+@import '@/styles/utils/_colors.scss';
+
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-4;
+}
+
+
+.text-field__input {
+    border-radius: 2px;
+    background-color: white;
+    color: $eerie-black;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid $platinum;
+    font-size: 14px;
+    font-weight: 400;
+
+    &::placeholder {
+        color: $platinum;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+        border: 1px solid $lavender-indigo;
+    }
+
+    &--invalid {
+        border: 1px solid $debian-red;
+    }
+
+    &--disabled {
+        background-color: $spun-pearl;
+        &:hover {
+            border: 1px solid $platinum;
+        }
+    }
+
+    &--medium {
+        padding: 12px;
+    }
+
+    &--small {
+        padding: 8px 12px;
+    }
+}

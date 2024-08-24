@@ -1,22 +1,8 @@
 import type { Metadata } from "next";
-import TopNavBar from "@/components/TopNavBar";
 import { Signika } from 'next/font/google';
-import { Bebas_Neue, Manrope } from "next/font/google";
-import bg from '/public/bg.png';
-
-const bebasNeue = Bebas_Neue({
-  weight: "400",
-  style: "normal",
-  subsets: ["latin"],
-  variable: "--bebas-neue",
-});
-
-const manrope = Manrope({
-  weight: "400",
-  style: "normal",
-  subsets: ["latin"],
-  variable: "--manrope",
-});
+import TopNavBar from "@/components/TopNavBar";
+import './globals.css';
+import '@/styles/main.scss';
 
 const signika = Signika({
   weight: '400',

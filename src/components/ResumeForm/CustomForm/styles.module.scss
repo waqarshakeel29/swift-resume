@@ -1,0 +1,25 @@
+
+.container {
+    display: grid; /* grid */
+    gap: 0.75rem; /* gap-3 */
+    grid-column: span 6 / span 6; /* col-span-full */
+}
+
+.bullet-container {
+    position: relative;            /* relative */
+    grid-column: span 6 / span 6;  /* col-span-full */
+  }
+
+.full-column-span {
+    grid-column: span 6 / span 6;  /* col-span-full */
+}
+
+.half-column-span {
+    grid-column: span 3 / span 6;  /* col-span-full */
+}
+
+.bullet-visibility-button {
+    position: absolute; /* absolute */
+    left: 7.7rem;       /* left-[7.7rem] */
+    top: 0.07rem;       /* top-[0.07rem] */
+}

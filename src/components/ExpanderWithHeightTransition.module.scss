@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  overflow: hidden;
+  transition: all 0.3s;
+  
+  &.visible {
+    visibility: visible;
+  }
+
+  &.invisible {
+    visibility: hidden;
+  }
+}
+
+.child {
+  min-height: 0;
+}

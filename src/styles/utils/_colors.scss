@@ -1,0 +1,418 @@
+
+$lavender-indigo: #9D3FE7;
+$rich-lilac: #AE60EB;
+$grape: #6A17AB;
+$light-gray: #D4D2D5;
+$spun-pearl: #ABA7AF;
+$platinum: #E5E0EB;
+$eerie-black: #1A141F;
+$debian-red: #D51A52;
+
+// copied
+//Colors
+
+/* ******* Main colors ******* */
+$white: #fff; //TO FIX
+$grey-text: #666;
+/* 40% */
+$light-blue: #3d90cb;
+/* 52% */
+$grey-mid: #aaa;
+/* 67% */
+$blue: #1b75b3;
+/* 40% */
+$blue-icon: #07c;
+$purple-icon: #bb7db9;
+$blue-main: #07c;
+$hover-item-list: #abdef3;
+$active-item-list: #80ceed;
+$grey-icon: #373739;
+$red-icon: #be151d;
+$black: #000;
+$abbey: #525355;
+$main-text-color: #373739;
+$selected-item: #003a65;
+$green-font: #468d0a;
+$green-font-2: #77b701;
+$grey-active: #e9e9ea;
+$grey-hover: #f4f4f5;
+$vivid-tangerine: #ff8080;
+$yellow: #ff6;
+$yellow-warning: #af620b;
+$baja-color: #fff9d4;
+$nevada: #6d6e71;
+$onyx: #393937;
+$orange: #e98312;
+$orange-light: #f0ac5f;
+$orange-dark: #af620b;
+$dark-pink: #fbead7;
+$button-active-color: #003a65;
+$button-hover-color: #0094fe;
+$button-inactive-color: #07c;
+$pomegranate: #be151d;
+$robroy: #f0c36d;
+$visvis: #fff1a8;
+$pomegranate-2: #f53939;
+$jaffa: #ed9839;
+$sandy-brown: #f0ac5f;
+$red-stage: #cd6703;
+$lochmara: #0077cc;
+$cloud-burst: #1f344c;
+$cloud-rain: #223556;
+$picked-bluewood: #384c61;
+$white-smoke: #efefef;
+$transparent: transparent;
+$cornflower-blue: #0167b1;
+$cornflower-blue2: #0a66b6;
+$bon-jour: #e4e3e4;
+$humming-bird: #e9f7fc;
+$elephant: #132a43;
+$boulder: #757575;
+$alto: #cfcfcf;
+$alto2: #d8d8d8;
+$cyan-blue: #006ebb;
+$dark-cyan-blue: #015391;
+$darker-grayish-blue: #263238;
+$light-yellow: #f7d84a;
+
+// CL button, TODO: it will be in monorepo in the future.
+$button-orange-default-color: $orange;
+$button-orange-active-color: $orange-dark;
+$button-orange-hover-color: $orange-light;
+$black-halo: #1d1b20;
+$active-pink: #fcbbd1;
+
+/* ******** Error Colors ******** */
+$error-red: #f00;
+$error-label: #f2dede;
+$error-dark-red: #a00;
+
+/* ******** Other Colors ******** */
+$text-highlighted-red: $vivid-tangerine;
+$legend: $nevada;
+
+/* ******* Dark Topbar ******* TO REFACTORIZE */
+$topbarColor: $elephant;
+$topbarBtnHover: #223556;
+$inputSearchBkg: $grey-active;
+$inputSearchColor: $nevada;
+$logoBkg: $elephant;
+$productItem: $topbarColor;
+$productItemHover: #4b5b79;
+
+/* ******* Footer ******* */
+$footerLink: $boulder;
+$footerBorder: #cfcfcf;
+
+/* ******* Product Switcher ******* TO REFACTORIZE */
+$badge: #e8171f;
+$intelligizeItem: #0067b1;
+
+//Legacy colors to refactorize
+
+/* ******** Font Colors ******** */
+$greyish-font: #4c4c4c;
+
+$scrollbars-and-buttons: $grey-mid;
+
+/* ******** Pills ******** */
+$new-pill-ok: #e9f7fc;
+$pill-ok: #dcedff;
+$pill-error: #fcc;
+$pill-info: #ffc;
+$pill-free-text: #baffcd;
+$pill-free-text-extra-light: #ccedce;
+
+/* ******** Greys ******** */
+$grey-warning: #333;
+/* 20% */
+$grey-list-border: #808080;
+/* normal grey */
+$grey-text-light: #888;
+/* 53% */
+$grey-subtext: #908e8e;
+/* 56% */
+$grey-dashed-border: #a1a1a1;
+/* 63% */
+$grey-background: #cfcfcf;
+/* 81% */
+$grey-background-extra-light: #ececec;
+$grey-header: #eaeaea;
+/* 92% */
+$grey-container: #f5f5f5;
+/* 96% */
+$grey-disabled: #bbb;
+$grey-extra-light: #e4e4e4;
+$grey-lightest: #f1f1f1;
+$grey-graph-border: #d3d3d3;
+$grey-light-header-table: #ebebeb;
+$grey-dark-header-table: #cfcfcf;
+$grey-btn: $grey-active;
+$grey-icon-search: $grey-icon;
+$grey-footer: #a8aaac;
+$grey-container-dark: #4c4c4c;
+$grey-cell-border: #abacac;
+$grey-border: #979797;
+$silver-sand: #bcbec0;
+$dolphin: #848484;
+$athens-grey: #f4f4f5;
+$iron: #e9e9ea;
+$iron-2: #d2d4d5;
+$grey-title-label: #f4f4f5ff;
+$dark-grayish-blue: #434345;
+$light-grey: #cfd8dc;
+$extra-light-grey: #f5f7f8;
+
+/* ******** Links ******** */
+$link-color: $cyan-blue;
+$link-disabled: $nevada;
+
+/* ******** Sidebar ******** */
+$sidebar-bkg: $grey-hover;
+$link-disabled: #bcbec0;
+$input-border: #bcbec0;
+
+/* ******** Result Grid ******** */
+$row-background-idle: #d5eff9;
+$row-background-hover: #abdef3;
+$row-background-active: #abdef3;
+$row-background-header: #d2d4d5;
+$row-background-timeline: $baja-color; // Timeline CL
+$snippet-background: #f0f3f5;
+$tooltip-background: #0077cc;
+
+/* Borders */
+$grey-title-border: #939598;
+$light-grey-border: #e0e0e0;
+
+/* ******** Checkbox ******** */
+$checkbox-partial: #939598;
+
+/* ******** Checklist Link Colors ******** */
+$verdungreen: #4f7b02;
+$plum: #8f2b8c;
+$colorSquare-red-color: #d00a1a;
+$colorSquare-green-color: #80d214;
+
+/* ******* Table ******* */
+$table-header-hover: #e2e2e2;
+$table-header-border: #cfcfcf;
+$ma-table-row-hover: #dcedff;
+$table-subheader-background: #e9e9ea;
+
+/* ******* Table ******* */
+$contextual-menu-border: lightgray;
+$contextual-menu-background: #efeff0;
+$contextual-menu-background-active: #d6e1e8;
+$contextual-menu-background-disabled: gray;
+
+$button-active-color: #003a65;
+$button-hover-color: #0094fe;
+$button-inactive-color: #07c;
+$button-disabled-color: $silver-sand;
+
+/* ******* Specific Graph Colors ******* */
+$redish-cinnabar: #e9484a;
+$green-deco: #c5e093;
+$blue-danube: #79add3;
+
+/* ******* Finantial view / Tabs ******* */
+$premium-tab-idle: $jaffa;
+$premium-tab-hover: $sandy-brown;
+$premium-tab-active: $red-stage;
+
+/* ******* Finantial view / Holdings ******* */
+$positive-holdings-color: #8ac224;
+$negative-holdings-color: #8e1216;
+
+$red-background: #e67170;
+$orange-background: #f1b582;
+$yellow-background: #fbe991;
+$light-green-background: #e9e9a1;
+$green-background: #c8d98b;
+$dark-green-background: #8fc384;
+
+/* ******* Finantial view / Insiders ******* */
+$positive-numbers-color: #488d00;
+$negative-numbers-color: #e9484a;
+$active-filter: $blue-icon;
+
+:export {
+  positiveHoldingsColor: $positive-holdings-color;
+  negativeHoldingsColor: $negative-holdings-color;
+}
+
+/* Icons */
+$unpin-icon: $lochmara;
+
+/* Cell table */
+$cell-primary: #babbbe;
+$cell-selected-gray: #828285;
+$cell-highlight: #ffd900;
+
+/* ******* Compare/RedLine******* */
+$black-overlay: #00000033;
+$textAdded: blue;
+$textRemoved: red;
+
+$blue-gray: #c6dbf7;
+$navy-blue: #142c44;
+
+$pink: #f8a4a7;
+
+$dark-gray: #464646;
+$light-gray: #f0f0f0;
+/* Matrix Grid Topics */
+$all-topics: #0474cc;
+$new-topic: #049dda;
+$changed-topic: #9f499c;
+$deleted-topic: #be151d;
+$deepBlue: #095573;
+
+$main-row-gray: #cccccc;
+$nested-row-gray: #dddddd;
+/***** Graph Scale Colors *****/
+$graph-red: #d15b60;
+$graph-orange: #efa959;
+$graph-yellow: #ffe44c;
+$graph-green: #add466;
+$graph-blue: #4fbbe5;
+$graph-violet: #bb7fb9;
+$graph-grey: #b2bec3;
+$graph-blue-very-dark-blue: #004f6e;
+$graph-blue-dark-blue: #0176a4;
+
+:export {
+  graphRed: $graph-red;
+  graphOrange: $graph-orange;
+  graphYellow: $graph-yellow;
+  graphGreen: $graph-green;
+  graphBlue: $graph-blue;
+  graphViolet: $graph-violet;
+  graphGrey: $graph-grey;
+}
+
+$dark-blue: #1f497d;
+$light-blue-list-active: #b5d6f7;
+/* 84% */
+$light-blue-list-hover: #dcedff;
+/* 93% */
+$light-blue-list: #ebf3ff;
+/* 96% */
+$blue-disabled: #45a0e0;
+/* This comes from production app, don't look at me */
+
+$red: red;
+$greenyellow: #adff2f;
+$darkgreen: #006400;
+$links-violet: #1b75b3;
+$yellow-text-color: #f5a623;
+
+$red-font: #930d1d;
+
+$popup-border-color: $grey-background;
+
+$arrow: #15c;
+$downArrow: #c91824;
+$upArrow: #19b01d;
+$almostDownArrow: #fc6821;
+$almostUpArrow: #b8dc2c;
+
+$froly: #f4777c;
+$polin-dark: #283136;
+$blizzard-blue: #abdef3;
+$rhino: #253a51;
+$pickled-bluewood: #2f4359;
+$pickb: #384c61;
+$picasso: #fff099;
+$ebony-clay: #1c252b;
+$outer-space: #222b31;
+$space: #2d353b;
+$bright-grey: #363e46;
+$text-highlight: #fcea97;
+$red-orange: #fe3023;
+$bunker: #101a20;
+$seagull: #80ceed;
+$pill-background: #e9f7fc;
+$pill-invalid-background: #777;
+$item-list-hovered: $pill-background;
+$picton-blue: #55bee7;
+$link-removed-light: #6d6e71;
+$link-removed-dark: #717d8a;
+$notification-processing: #e8f0f4;
+$notification-success: #f0f5ea;
+$notification-error: #f4e9e9;
+
+$borderWarningGray: 1px solid #333;
+$borderGreySolidLight: 1px #e0e0e0 solid;
+$borderLightGrey: 1px #d8d8d8 solid;
+$borderLightGreyDashed: 1px #d8d8d8 dashed;
+$borderLightGreyStrong: 3px #d8d8d8 solid;
+$borderGreySolid: 1px #aaa solid;
+$borderGreyDotted: 1px #aaa dotted;
+$borderGreyDashed: 1px #c5ced9 dashed;
+$borderErrorRed: 1px solid #a00;
+$borderBadgeRed: 1px solid #d50000;
+$borderPopup: 3px solid #aaa;
+$blue-70: #049dda;
+$grey-20: #e9e9ea;
+
+$dark-grey: #373739;
+
+$cornflower-blue3: #fafbfc;
+$midnight: #00172e;
+$fiord: #455a64;
+$pomegranate-3: #f6271c;
+$casablanca: #f5ae47;
+$fruit-salad: #4bab52;
+$denim: #1584d4;
+$athens-grey2: #fafbfc;
+$picton-blue2: #4fc3f7;
+$mystic: #e5ebf0;
+$grenadier: #dd2c00;
+$amaranth: #d91b5a;
+$french-rose: #ec407a;
+$cherub: #fbe5e6;
+$tory-blue: #0d47a1;
+$lochmara-2: #0288d1;
+$denim: #1976d2;
+$cerulean: #039be5;
+$malibu: #51b5fc;
+$tower-gray: #b0bec5;
+$geyser: #d5dde5;
+$cutty-sark: #546e7a;
+$thunderbird: #cf261d;
+$fair-pink: #ffeded;
+$deep-oak: #3d250e;
+$forest-green: #217528;
+$panache: #e1f2e2;
+$pattens-blue: #e0f2ff;
+$gulf-blue: #2e4266;
+$link-water: #c5ced9;
+$mischka: #a3afbf;
+$wedgewood: #506485;
+$golden-glow: #fcea97;
+$alice-blue: #f0f3f5;
+$sky-blue: #c2e5ff;
+$soft-aqua: #006ebb1f;
+$sky-blue: #c2e5ff;
+$azureish-white: #e0edf6;
+$dogwood-rose: #cf1d6a;
+$byzantine-blue: #495ccc;
+$red-warning: #b12c39;
+$cool-white: #f7f3fc;
+$light-grey: #605d64;
+$shadow: rgba(0, 0, 0, 0.25);
+$purple-900: #33174f;
+$purple-800: #2e1547;
+$purple-700: #4d2277;
+$purple-600: #672d9f;
+$purple-500: #8039c6;
+$purple-400: #9a60d2;
+$purple-100: #ccb0e8;
+$peppermint: #ccedce;
+$french-lilac: #e6d7f4;
+$atoll: #076969;
+$swamp: #1b1c1c;
+$lavendar: #b388dd;
+$dark-purple: #1a0b28;
