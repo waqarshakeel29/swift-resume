@@ -41,6 +41,7 @@ const SERIF_ENGLISH_FONT_FAMILIES = [
   "RobotoSlab",
   "PlayfairDisplay",
   "Merriweather",
+  "Tinos"
 ] as const;
 
 export const ENGLISH_FONT_FAMILIES = [
@@ -67,6 +68,7 @@ export const FONT_FAMILY_TO_STANDARD_SIZE_IN_PT: Record<FontFamily, number> = {
   Montserrat: 10,
   OpenSans: 10,
   Raleway: 10,
+  Tinos: 10,
   // Serif Fonts
   Caladea: 11,
   Lora: 11,
@@ -84,6 +86,7 @@ export const FONT_FAMILY_TO_DISPLAY_NAME: Record<FontFamily, string> = {
   Montserrat: "Montserrat",
   OpenSans: "Open Sans",
   Raleway: "Raleway",
+  Tinos: "Tinos",
   // Serif Fonts
   Caladea: "Caladea",
   Lora: "Lora",
