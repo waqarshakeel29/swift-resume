@@ -27,12 +27,16 @@ const ResumeControlBar = ({
     documentSize,
   });
 
-  const [instance, update] = usePDF({ document });
+  const [instance
+    // , update
+  ] = usePDF({ document });
 
   // Hook to update pdf when document changes
   useEffect(() => {
-    update();
-  }, [update, document]);
+    // update();
+  }, [
+    // update, 
+    document]);
 
   return (
     <div className={styles.container}>
