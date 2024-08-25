@@ -27,16 +27,12 @@ const ResumeControlBar = ({
     documentSize,
   });
 
-  const [instance
-    // , update
-  ] = usePDF({ document });
+  const [instance, update] = usePDF({ document });
 
   // Hook to update pdf when document changes
   useEffect(() => {
-    // update();
-  }, [
-    // update, 
-    document]);
+    update(document);
+  }, [update, document]);
 
   return (
     <div className={styles.container}>
@@ -75,12 +71,12 @@ const ResumeControlBar = ({
         </label>
       </div>
       <a
-        className={styles['download-resume']}
+        className={styles["download-resume"]}
         href={instance.url!}
         download={fileName}
       >
         <ArrowDownTrayIcon className={styles.icon} />
-        <span className={styles['download-resume__text']}>Download Resume</span>
+        <span className={styles["download-resume__text"]}>Download Resume</span>
       </a>
     </div>
   );
