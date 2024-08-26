@@ -6,6 +6,7 @@ export interface Settings {
   fontFamily: string;
   fontSize: string;
   documentSize: string;
+  showDocumentInPDFViewer: string;
   formToShow: {
     workExperiences: boolean;
     educations: boolean;
@@ -40,12 +41,14 @@ export const DEFAULT_THEME_COLOR = "#DF6951"; // sky-400
 export const DEFAULT_FONT_FAMILY = "Roboto";
 export const DEFAULT_FONT_SIZE = "11"; // text-base https://tailwindcss.com/docs/font-size
 export const DEFAULT_FONT_COLOR = "#171717"; // text-neutral-800
+export const DEFAULT_PDF_VIEWER = "YES";
 
 export const initialSettings: Settings = {
   themeColor: DEFAULT_THEME_COLOR,
   fontFamily: DEFAULT_FONT_FAMILY,
   fontSize: DEFAULT_FONT_SIZE,
   documentSize: "Letter",
+  showDocumentInPDFViewer: DEFAULT_PDF_VIEWER,
   formToShow: {
     workExperiences: true,
     educations: true,

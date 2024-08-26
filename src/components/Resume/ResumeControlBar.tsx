@@ -8,6 +8,8 @@ import {
 import { usePDF } from "@react-pdf/renderer";
 import dynamic from "next/dynamic";
 import styles from "./ResumeControlBar.module.scss";
+import { GeneralSetting, changeSettings, selectSettings } from "@/app/lib/redux/settingsSlice";
+import { useAppDispatch, useAppSelector } from "@/app/lib/redux/hooks";
 
 const ResumeControlBar = ({
   scale,
@@ -22,11 +24,19 @@ const ResumeControlBar = ({
   document: JSX.Element;
   fileName: string;
 }) => {
+  const dispatch = useAppDispatch();
+  const settings = useAppSelector(selectSettings);
+  const { showDocumentInPDFViewer } = settings;
+  
   const { scaleOnResize, setScaleOnResize } = useSetDefaultScale({
     setScale,
     documentSize,
   });
 
+  const handleSettingsChange = (field: GeneralSetting, value: string) => {
+    dispatch(changeSettings({ field, value }));
+  };
+  
   const [instance, update] = usePDF({ document });
 
   // Hook to update pdf when document changes
@@ -67,6 +77,21 @@ const ResumeControlBar = ({
             }}
           >
             Autoscale
+          </span>
+        </label>
+        <label className={styles.checkbox}>
+          <input
+            type="checkbox"
+            className={styles["checkbox__input"]}
+            checked={showDocumentInPDFViewer === "YES"}
+            onChange={() => handleSettingsChange("showDocumentInPDFViewer", showDocumentInPDFViewer === "YES" ? "NO" : "YES")}
+          />
+          <span
+            style={{
+              userSelect: "none",
+            }}
+          >
+            PDF Viewer
           </span>
         </label>
       </div>
