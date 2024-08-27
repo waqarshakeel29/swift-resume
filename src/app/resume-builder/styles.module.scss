@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    @media (min-width: 768px) { /* This corresponds to the `md` breakpoint in Tailwind */
+    @media (min-width: 768px) { 
         grid-template-columns: repeat(6, 1fr);
     }
 }

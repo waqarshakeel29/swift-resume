@@ -4,7 +4,7 @@
     justify-content: center;
 
     @media (min-width: 768px) {
-        /* This corresponds to the `md` breakpoint in Tailwind */
+        
         justify-content: flex-start;
     }
 }
@@ -13,7 +13,7 @@
     display: none;
 
     @media (min-width: 768px) {
-        /* This corresponds to the `md` breakpoint in Tailwind */
+        
         display: block;
     }
 }
@@ -22,7 +22,7 @@
     height: calc(100vh - 3.5rem - 3rem);
     overflow: hidden;
   
-    @media (min-width: 768px) { /* This corresponds to the `md` breakpoint in Tailwind */
+    @media (min-width: 768px) { 
       padding: 1.5rem;
     }
   }

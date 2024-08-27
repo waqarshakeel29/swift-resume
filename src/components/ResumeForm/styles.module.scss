@@ -1,76 +1,60 @@
 .container {
     display: flex;
-    /* flex */
-    justify-content: center;
-    /* justify-center */
 
-    /* Scrollbar styles */
+    justify-content: center;
+
     scrollbar-width: thin;
-    /* For Firefox */
+
     scrollbar-color: gray-100 transparent;
-    /* For Firefox */
 
     &::-webkit-scrollbar {
         width: 0.75rem;
-        /* scrollbar-w-3 */
     }
 
     &::-webkit-scrollbar-track {
         background-color: #f5f5f5;
-        /* scrollbar-track-gray-100 */
     }
 
     @media (min-width: 768px) {
-        /* md: prefix */
         height: calc(100vh - 3.5rem);
-        /* md:h-[calc(100vh-var(--top-nav-bar-height))] */
+
         justify-content: flex-end;
-        /* md:justify-end */
+
         overflow-y: scroll;
-        /* md:overflow-y-scroll */
     }
 }
 
 .section-container {
     display: flex;
-    /* flex */
-    max-width: 42rem;
-    /* max-w-2xl */
-    flex-direction: column;
-    /* flex-col */
-    gap: 2rem;
-    /* gap-8 */
-    padding: 1.5rem;
-    /* p-[var(--resume-padding)] */
-}
 
+    max-width: 42rem;
+
+    flex-direction: column;
+
+    gap: 2rem;
+
+    padding: 1.5rem;
+}
 
 .custom-scrollbar {
     &::-webkit-scrollbar-thumb {
         background-color: #e5e7eb;
-        /* This is the hex value for gray-200 in Tailwind */
     }
 
     &::-moz-scrollbar-thumb {
         background-color: #e5e7eb;
-        /* For Firefox compatibility */
     }
 
     &::-ms-scrollbar-thumb {
         background-color: #e5e7eb;
-        /* For Edge compatibility */
     }
 }
 
-
 .custom-visibility {
     display: none;
-    /* hidden on all screen sizes */
 
     @media (min-width: 768px) {
-        /* md breakpoint */
         display: block;
-        /* visible on medium and larger screens */
     }
 }
 
