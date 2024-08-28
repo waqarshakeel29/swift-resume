@@ -128,11 +128,12 @@ const RESET_INTERVAL_MS = 60 * 1000; // 60s
 
 export const AutoTypingResume = () => {
   const [resume, setResume] = useState(deepClone(initialResumeState));
+  const [scaling, setScaling] = useState(0.7);
   const resumeCharIterator = useRef(
     makeObjectCharIterator(START_HOME_RESUME, END_HOME_RESUME)
   );
   const hasSetEndResume = useRef(false);
-  const { isLg } = useTailwindBreakpoints();
+  const { isLg, isMd, isSm } = useTailwindBreakpoints();
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -165,9 +166,23 @@ export const AutoTypingResume = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    const getScaling = () => {
+      if (isLg) {
+        return 0.7;
+      } else if (isMd) {
+        return 0.5;
+      } else if (isSm) {
+        return 0.4;
+      }
+      return 0.4;
+    };
+    setScaling(getScaling());
+  }, [isLg, isMd, isSm]);
+
   return (
     <>
-      <ResumeIframeCSR documentSize="Letter" scale={isLg ? 0.7 : 0.5}>
+      <ResumeIframeCSR documentSize="Letter" scale={scaling}>
         <ResumePDF
           resume={resume}
           settings={{

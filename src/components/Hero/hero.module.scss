@@ -21,8 +21,8 @@
 }
 
 .subheading {
-    font-size: 28px;
-    width: 500px;
+    font-size: 24px;
+    max-width: 500px;
     color: #3A556A;
     line-height: 1.2;
     text-align: justify;
@@ -42,3 +42,30 @@
 .create-button:hover {
     background-color: #F1A501;
 }
+
+@media only screen and (max-width: 1200px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-container {
+        height: auto;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+
+    .subheading {
+        font-size: 20px;
+        text-align: center;
+     }
+
+     .create-button {
+        width: 150px;
+        height: 50px;
+     }
+  }
