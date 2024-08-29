@@ -4,6 +4,10 @@
     height: 100%;
     overflow: hidden;
     margin: 24px 48px;
+    @media (max-width: 768px) { 
+        overflow: scroll;
+        margin: 12px 24px;
+    }
 }
 
 .resume-container {
